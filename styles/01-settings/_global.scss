@@ -1,0 +1,92 @@
+// Namespaces
+$scales-namespace: 'sls-';
+$scales-base-class-namespace: 'b-';
+$scales-objects-class-namespace: 'o-';
+$scales-components-class-namespace: 'c-';
+$scales-utilities-class-namespace: 'u-';
+
+// Site consistency
+$border-radius: 5px;
+$transition: 0.2s ease-out;
+
+// Typography
+$ms-base: 1rem;
+$ms-ratio: 1.1;
+$base-font-size: 18px;
+$base-text-color: $black;
+$text-margins: 0 0 ms(1) 0;
+$heading-margins: 0 0 ms(1) 0;
+$heading-color: $black;
+$system-body-fonts: false;
+$system-heading-fonts: false;
+$body-font-stack: 'myriad-pro', 'arial', sans-serif;
+$heading-font-stack: $body-font-stack;
+$heading-font-weight: 700;
+$base-font-weight: normal;
+$h1-size: ms(10);
+$h2-size: ms(6);
+$h3-size: ms(2);
+$h4-size: ms(-1);
+$type-breakpoint: 34.375em;
+$wide-measure: 48em;
+
+// Reset
+$selection-bg-color: $blue;
+$selection-text-color: $base-text-color;
+
+// Buttons
+$btn-background-color: $green;
+$btn-border-style: solid;
+$btn-border-radius: $border-radius;
+$btn-text-color: $white;
+$btn-padding: 1em 2.46832em;
+$btn-hover-background-color: $green-dark;
+$btn-hover-text-color: $white;
+$btn-disabled-opacity: 1;
+$btn-disabled-text-color: $white;
+$btn-disabled-border-width: 2px;
+$btn-disabled-border-color: $gray;
+
+// Forms
+$fieldset-padding: 0;
+$text-input-padding: 0.3em;
+$text-input-border-width: 2px;
+$text-input-border-color: $gray;
+$text-input-border-radius: $border-radius;
+$input-container-margin-bottom: ms(5);
+$input-disabled-border-color: $gray;
+$input-disabled-background-color: $gray-light;
+$input-disabled-text-color: $white;
+$select-background-color: $white;
+$select-height: 2.3496125em;
+
+// Spacing
+$space-s: 0.49168rem;
+$space-m: 1.04426rem;
+$space-l: 2.03384rem;
+$space-h: 2.99563rem;
+
+// Box
+$box-padding: $space-m;
+$box-padding-large: $space-l;
+$box-padding-huge: $space-h;
+
+// Panels
+$panel-split-point: 61.25em;
+
+// Common split points
+$small: 35.9375em; // 575px
+$medium: 40.063em; // 641px
+$large: $panel-split-point; // 980px
+
+// Media
+$media-stacked-breakpoint: 45em;
+$media-gutter: $space-m;
+$media-gutter-large: $space-l;
+
+// Wrappers
+$wrapperWidth: 55.5rem;
+$wrapperBreakoutWidth: 67rem;
+
+// Grid
+$grid-breakpoint: 50em;

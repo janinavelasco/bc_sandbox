@@ -1,0 +1,165 @@
+// ==================================================================
+// Navigation
+// ==================================================================
+
+// Available Variables
+$main-nav-breakpoint: 46em !default;
+
+.c-Navigation {
+  background-color: $white;
+  border-top: 2px solid $grey-medium;
+  position: absolute;
+  width: 100%;
+
+  @media (min-width: $main-nav-breakpoint) {
+    border-bottom: 2px solid $grey-medium;
+    border-top: 0;
+    // Makes each item equal width reguardless of number of items
+    display: table;
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+  }
+}
+
+.c-Navigation,
+.c-Navigation__sub {
+  list-style-type: none;
+}
+
+.c-Navigation.is-hidden\@sm {
+  @media (max-width: $main-nav-breakpoint) {
+    display: none;
+  }
+}
+
+.c-Navigation__item {
+  line-height: 3.19534rem;
+
+  @media (min-width: $main-nav-breakpoint) {
+    display: table-cell;
+    line-height: 1.90672rem;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
+
+.c-Navigation__item a {
+  border: 2px solid $grey-medium;
+  border-top: 0;
+  color: $blue-dark;
+  display: block;
+  padding-left: 1.90672rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    background-color: $blue-dark;
+    color: $white;
+
+    .c-Navigation__arrow {
+      fill: $white;
+    }
+  }
+
+  @media (min-width: $main-nav-breakpoint) {
+    @include hoverline($white, 85%);
+    border: 0;
+    padding-left: 0;
+
+    &.c-Navigation__item--active,
+    &:focus,
+    &:hover {
+      @include hoverline($blue-medium, 85%);
+      background-color: $white;
+      color: $blue-medium;
+
+      // Kinda gross but need to change the color of this icon on
+      // hover of nav item anchor
+      .c-Navigation__arrow {
+        fill: $blue-medium;
+      }
+    }
+  }
+}
+
+// Show the sub navigation on hover and focus
+.c-Navigation__item:focus .c-Navigation__sub,
+.c-Navigation__item:hover .c-Navigation__sub {
+
+  @media (min-width: $main-nav-breakpoint) {
+    display: block;
+    position: absolute;
+    z-index: 100;
+  }
+}
+
+.c-Navigation__arrow {
+  fill: $blue-dark;
+  float: right;
+  margin-right: 1.90672rem;
+  margin-top: 1rem;
+  width: 15px;
+
+  @media (min-width: $main-nav-breakpoint) {
+    fill: $blue-dark;
+    float: none;
+    margin: 0 0 0.27506rem 0.27506rem;
+  }
+}
+
+.c-Navigation__sub {
+  border-bottom: 2px solid $grey-medium;
+
+  @media (min-width: $main-nav-breakpoint) {
+    border: 2px solid $grey-medium;
+    border-top: 0;
+    display: none;
+  }
+}
+
+.c-Navigation__sub-item {
+  background-color: $white;
+  width: 100%;
+
+  @media (min-width: $main-nav-breakpoint) {
+    float: left;
+    line-height: 1.90672rem;
+    padding: 0.52446rem 1rem;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+.c-Navigation__sub-item:last-child {
+
+  @media (min-width: $main-nav-breakpoint) {
+    a {
+      margin-bottom: 0.52446rem;
+    }
+  }
+}
+
+.c-Navigation__sub-item a {
+  border: 0;
+  color: $blue-dark;
+  text-transform: none;
+
+  &:hover {
+    color: $white;
+  }
+
+  @media (min-width: $main-nav-breakpoint) {
+    @include hoverline($white, 100%);
+    background-color: $white;
+
+    &:focus,
+    &:hover {
+      @include hoverline($blue-medium, 100%);
+      color: $blue-medium;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.o-Lists__vertical {
+    list-style: none;
+    padding: 0;
+    color: $gray-dark;
+    height: 25em;
+    overflow-y: scroll;
+}
+
+.o-Lists__spacing {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: .05em solid;
+}

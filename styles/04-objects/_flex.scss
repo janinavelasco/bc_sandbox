@@ -1,0 +1,15 @@
+.o-Flex__wrapper {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.o-Flex__large {
+    flex: 3;
+    margin: .5em;
+}
+
+.o-Flex__small {
+    flex: 1;
+    margin: .5em;
+}

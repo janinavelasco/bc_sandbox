@@ -1,0 +1,83 @@
+// ==================================================================
+// Typography
+// ==================================================================
+
+// scales
+.b-BodyCopy {
+  color: $black;
+  font-family: $base-font-stack;
+  font-size: ms(0);
+}
+
+.b-Caption {
+  font-style: italic;
+}
+
+.b-Legal {
+  font-size: ms(-2);
+}
+
+.b-Heading {
+  // set here to avoid scales styling elements (h1-h6)
+  font-family: "quatro-slab", "times new roman", serif;
+}
+
+.b-Heading--jumbo {
+  color: $blue-dark;
+  font-size: ms(16);
+  font-weight: bold;
+}
+
+.b-Heading--primary {
+  color: $blue-dark;
+  font-size: ms(10);
+  font-weight: bold;
+}
+
+.b-Heading--secondary {
+  color: $black;
+  font-size: ms(6);
+  font-weight: normal;
+}
+
+.b-Heading--sub {
+  color: $black;
+  font-size: ms(2);
+  font-weight: bold;
+}
+
+.b-Heading--title {
+  color: $blue-dark;
+  font-size: ms(-1);
+  font-weight: bold;
+}
+
+.b-HeadingDivider {
+  border-bottom: 2px solid $grey-medium;
+  margin-bottom: ms(0);
+}
+
+.b-BodyDivider {
+  border: 0;
+  border-bottom: 2px dashed $grey-medium;
+  margin-bottom: ms(0);
+}
+
+.b-List--indented,
+.b-List--unordered {
+  padding-left: ms(1);
+}
+
+.b-List--ordered {
+  padding-left: ms(1);
+}
+
+.b-List--indented {
+  padding-left: ms(2);
+  margin-left: ms(0);
+}
+
+.b-List--bare {
+  list-style-type: none;
+  padding: 0;
+}

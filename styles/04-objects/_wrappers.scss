@@ -1,0 +1,31 @@
+// .o-Wrapper {
+//     @extend %ClearFix;
+
+//     margin-bottom: $space-m;
+
+//     @media (min-width: $wide-measure) {
+//         max-width: $wrapperWidth;
+//         margin: 0 auto $space-m;
+//     }
+// }
+
+.o-Wrapper--breakout {
+    @media all and (min-width: $wide-measure) {
+        max-width: $wrapperBreakoutWidth;
+    }
+}
+
+.o-Wrapper--page {
+    // margin-top: 1rem;
+    //
+    // @media all and (min-width: $type-breakpoint) {
+    //     margin-top: 1rem;
+    // }
+}
+
+.o-Wrapper--card {
+  border-radius: $border-radius;
+  background-color: $blue-dark;
+  color: $white;
+  padding: 1em;
+}
